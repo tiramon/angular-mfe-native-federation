@@ -7,7 +7,9 @@ import { HeaderComponent } from './header/header.component';
   imports: [RouterOutlet, HeaderComponent],
   template: `
     <app-shell-header></app-shell-header>
-    <router-outlet></router-outlet>
+    <div style="padding: 20px">
+      <router-outlet></router-outlet>
+    </div>
   `
 })
 export class AppComponent {

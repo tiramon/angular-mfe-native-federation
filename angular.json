@@ -48,9 +48,10 @@
 					"builder": "@angular-devkit/build-angular:karma",
 					"options": {
 						"polyfills": [
-							"zone.js",
-							"zone.js/testing"
-						],
+              "zone.js",
+              "zone.js/testing",
+              "@angular/localize/init"
+            ],
 						"tsConfig": "projects/shell/tsconfig.spec.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
@@ -73,9 +74,10 @@
 						"index": "projects/shell/src/index.html",
 						"browser": "projects/shell/src/main.ts",
 						"polyfills": [
-							"zone.js",
-							"es-module-shims"
-						],
+              "zone.js",
+              "es-module-shims",
+              "@angular/localize/init"
+            ],
 						"tsConfig": "projects/shell/tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
